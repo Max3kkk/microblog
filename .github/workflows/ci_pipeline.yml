@@ -8,5 +8,5 @@ on:
 jobs:
   trigger-central-workflow:
     uses: Max3kkk/repo-context-analyzer/.github/workflows/ci-pipeline.yml@main
-    with:
-      github_token: ${{ secrets.MY_GITHUB_TOKEN }}
+    secrets:
+      MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
